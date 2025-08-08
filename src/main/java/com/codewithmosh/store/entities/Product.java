@@ -1,5 +1,6 @@
 package com.codewithmosh.store.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 
