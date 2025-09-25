@@ -8,8 +8,8 @@ spring:
     accessTokenExpiration: 7200 #5minutes
     refreshTokenExpiration: 604800
 
-  profiles:
-    active: dev
+  #profiles:
+  #  active: dev
 
   security:
     user:
