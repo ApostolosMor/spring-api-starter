@@ -4,15 +4,14 @@ spring:
     username: ${MYSQL_USER}
     password: ${MYSQL_PASSWORD}
 
-  security:
-    user:
-      name: user
-      password: hello123
+  #security:
+   # user:
+   #   name: user
+    #  password: hello123
 
 server:
- # port: 8081
-  port: ${PORT}
+  port: 8081
 
-  websiteUrl: https://mystore.com
+websiteUrl: https://mystore.com
 
 

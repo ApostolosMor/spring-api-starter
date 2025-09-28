@@ -5,10 +5,10 @@ spring:
     password: MyPassword!
   jpa:
     show-sql: true
-  security:
-    user:
-      name: user
-      password: hello123
+  #security:
+   # user:
+   #   name: user
+    #  password: hello123
 
 
 server:
