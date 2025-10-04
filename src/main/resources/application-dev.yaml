@@ -5,11 +5,15 @@ spring:
     password: MyPassword!
   jpa:
     show-sql: true
-  #security:
+
+
+  flyway:
+    baseline-on-migrate: true
+    baseline-version: 5
+    #security:
    # user:
    #   name: user
     #  password: hello123
-
 
 server:
   port: 8081
