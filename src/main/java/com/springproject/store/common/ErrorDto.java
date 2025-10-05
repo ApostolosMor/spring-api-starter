@@ -1,4 +1,4 @@
-package com.springproject.store.dtos;
+package com.springproject.store.common;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,7 +1,7 @@
 package com.springproject.store.controllers;
 
 
-import com.springproject.store.dtos.ErrorDto;
+import com.springproject.store.common.ErrorDto;
 import com.springproject.store.dtos.OrderDto;
 import com.springproject.store.exceptions.OrderNotFoundException;
 import com.springproject.store.services.OrderService;

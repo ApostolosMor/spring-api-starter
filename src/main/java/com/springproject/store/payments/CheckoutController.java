@@ -1,7 +1,7 @@
 package com.springproject.store.payments;
 
 
-import com.springproject.store.dtos.ErrorDto;
+import com.springproject.store.common.ErrorDto;
 import com.springproject.store.exceptions.CartEmptyException;
 import com.springproject.store.exceptions.CartNotFoundException;
 import com.springproject.store.repositories.OrderRepository;

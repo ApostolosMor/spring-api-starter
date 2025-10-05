@@ -1,4 +1,4 @@
-package com.springproject.store.filters;
+package com.springproject.store.common;
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;

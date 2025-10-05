@@ -1,6 +1,7 @@
 package com.springproject.store.config;
 
 
+import com.springproject.store.common.SecurityRules;
 import com.springproject.store.entities.Role;
 import com.springproject.store.filters.JwtAuthenticationFilter;
 import lombok.AllArgsConstructor;
@@ -23,6 +24,8 @@ import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.HttpStatusEntryPoint;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
+import java.util.List;
+
 @Configuration
 @EnableWebSecurity
 @AllArgsConstructor
@@ -30,6 +33,7 @@ public class SecurityConfig {
 
     private final UserDetailsService userDetailsService;
     private final JwtAuthenticationFilter jwtAuthenticationFilter;
+    //private final List<SecurityRules> featureSecurityRules;
 
     @Bean
     public PasswordEncoder passwordEncoder(){
@@ -57,6 +61,7 @@ public class SecurityConfig {
                         c.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(c->
+                        //{for (var rule: featureSecurityRules{rule.configure(c);} c.anyRequest().authenticated();}
                         c
                                 //Added the swagger-ui and v3
                                 .requestMatchers("/swagger-ui/**").permitAll()
@@ -65,10 +70,6 @@ public class SecurityConfig {
                                 //.requestMatchers("/carts/**").permitAll()
                                 .requestMatchers("/admin/**").hasRole(Role.ADMIN.name())
                                 .requestMatchers(HttpMethod.POST, "/users").permitAll()
-                                .requestMatchers(HttpMethod.GET, "/products/**").permitAll()
-                                .requestMatchers(HttpMethod.POST, "/products/**").hasRole(Role.ADMIN.name())
-                                .requestMatchers(HttpMethod.PUT, "/products/**").hasRole(Role.ADMIN.name())
-                                .requestMatchers(HttpMethod.DELETE, "/products/**").hasRole(Role.ADMIN.name())
                                 .requestMatchers(HttpMethod.POST, "/auth/login").permitAll()
                                 .requestMatchers(HttpMethod.POST, "/auth/validate").permitAll()
                                 .requestMatchers(HttpMethod.POST, "/checkout/webhook").permitAll()
