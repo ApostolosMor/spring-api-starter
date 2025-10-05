@@ -9,8 +9,11 @@ spring:
    #   name: user
     #  password: hello123
 
+#server:
+  #port: 8081
 server:
-  port: 8081
+  port: ${PORT:8081}
+
 
 websiteUrl: https://mystore.com
 
