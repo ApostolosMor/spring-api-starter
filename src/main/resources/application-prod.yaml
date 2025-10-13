@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: ${SPRING_DATASOURCE_URI}
+    url: ${SPRING_DATASOURCE_URL}
     username: ${MYSQL_USER}
     password: ${MYSQL_PASSWORD}
 
@@ -12,7 +12,8 @@ spring:
 #server:
   #port: 8081
 server:
-  port: ${PORT}
+  port: ${PORT:8081}
+  address: 0.0.0.0    # Bind to all interfaces
 
 
 websiteUrl: https://mystore.com
