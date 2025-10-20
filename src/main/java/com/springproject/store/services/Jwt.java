@@ -1,6 +1,6 @@
 package com.springproject.store.services;
 
-import com.springproject.store.entities.Role;
+import com.springproject.store.users.Role;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 

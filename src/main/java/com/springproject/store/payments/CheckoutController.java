@@ -2,9 +2,9 @@ package com.springproject.store.payments;
 
 
 import com.springproject.store.common.ErrorDto;
-import com.springproject.store.exceptions.CartEmptyException;
-import com.springproject.store.exceptions.CartNotFoundException;
-import com.springproject.store.repositories.OrderRepository;
+import com.springproject.store.cart.CartEmptyException;
+import com.springproject.store.cart.CartNotFoundException;
+import com.springproject.store.order.OrderRepository;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;

@@ -1,8 +1,8 @@
 package com.springproject.store.services;
 
 
-import com.springproject.store.config.JwtConfig;
-import com.springproject.store.entities.User;
+import com.springproject.store.auth.JwtConfig;
+import com.springproject.store.users.User;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.JwtException;
 import io.jsonwebtoken.Jwts;

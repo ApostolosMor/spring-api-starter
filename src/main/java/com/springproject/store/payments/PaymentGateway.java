@@ -1,6 +1,6 @@
 package com.springproject.store.payments;
 
-import com.springproject.store.entities.Order;
+import com.springproject.store.order.Order;
 
 import java.util.Optional;
 

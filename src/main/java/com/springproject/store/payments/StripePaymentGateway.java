@@ -1,7 +1,7 @@
 package com.springproject.store.payments;
 
-import com.springproject.store.entities.Order;
-import com.springproject.store.entities.OrderItem;
+import com.springproject.store.order.Order;
+import com.springproject.store.order.OrderItem;
 import com.springproject.store.entities.PaymentStatus;
 import com.stripe.exception.SignatureVerificationException;
 import com.stripe.exception.StripeException;
